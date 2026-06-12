@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Suite ERP Alpha — Application Python de gestion de stock et facturation automatisée. Projet de Nabil Dickeni." />
+  <title>ERP Alpha — Nabil Dickeni</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">Nabil <span style="color:var(--clr-accent)">Dickeni</span>
+
+      <nav class="navbar__nav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html"    class="navbar__link" data-i18n="nav_home"></a>
+        <a href="about.html"    class="navbar__link" data-i18n="nav_about"></a>
+        <a href="projects.html" class="navbar__link" data-i18n="nav_projects"></a>
+        <a href="contact.html"  class="navbar__link" data-i18n="nav_contact"></a>
+        <div class="lang-switch" role="group" aria-label="Choix de langue">
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Choix de langue">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="navbar__burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ===== HERO PROJET ===== -->
+    <section class="project-detail-hero" aria-labelledby="project-title">
+      <div class="container">
+
+        <!-- Lien retour -->
+        <a href="projects.html" class="back-link reveal">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M19 12H5M12 19l-7-7 7-7"/>
+          </svg>
+          <span data-i18n="nav_projects"></span>
+        </a>
+
+        <div class="project-meta">
+
+          <!-- Infos principales -->
+          <div>
+            <p class="section-label reveal" style="color:rgba(232,130,58,0.9);" data-i18n="proj_erp_cat"></p>
+            <h1 id="project-title" class="display-md reveal reveal-delay-1"
+                style="color:#fff; margin-bottom:1rem;" data-i18n="proj_erp_title"></h1>
+            <p class="reveal reveal-delay-2"
+               style="color:rgba(255,255,255,0.65); font-size:1.1rem; line-height:1.8; font-weight:300; max-width:560px;"
+               data-i18n="proj_erp_desc"></p>
+
+            <div class="tags-list reveal reveal-delay-3" style="margin-top:1.5rem;">
+              <span class="tag tag--accent">Python</span>
+              <span class="tag tag--accent">Google Sheets</span>
+              <span class="tag tag--accent">Apps Script</span>
+              <span class="tag tag--accent">Automation</span>
+              <span class="tag tag--accent">ERP</span>
+            </div>
+          </div>
+
+          <!-- Sidebar méta -->
+          <aside class="project-meta__sidebar reveal reveal-delay-2" aria-label="Détails du projet">
+            <div class="project-meta__row">
+              <p class="project-meta__key">Année</p>
+              <p class="project-meta__val">2026</p>
+            </div>
+            <div class="project-meta__row">
+              <p class="project-meta__key">Rôle</p>
+              <p class="project-meta__val">Développeur & Ops Designer</p>
+            </div>
+            <div class="project-meta__row">
+              <p class="project-meta__key">Type</p>
+              <p class="project-meta__val">Projet indépendant</p>
+            </div>
+            <div class="project-meta__row">
+              <p class="project-meta__key">Client</p>
+              <p class="project-meta__val">Commerces locaux, Lomé</p>
+            </div>
+            <div class="project-meta__row">
+              <p class="project-meta__key">Outils</p>
+              <p class="project-meta__val">Python, Google Sheets, Apps Script, Drive</p>
+            </div>
+            <div class="project-meta__row">
+              <p class="project-meta__key">Impact</p>
+              <p class="project-meta__val">2 commerces digitalisés</p>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CONTENU PROJET ===== -->
+    <section class="project-content">
+      <div class="container">
+        <div style="display:grid; grid-template-columns: 1fr 340px; gap: var(--space-2xl); align-items: start;">
+
+          <!-- Corps principal -->
+          <div>
+
+            <div class="reveal">
+              <h2>Contexte</h2>
+              <p>
+                Des commerçants locaux à Lomé géraient encore leurs stocks 
+                et leur facturation entièrement sur papier ou avec des fichiers 
+                Excel non structurés. Les erreurs étaient fréquentes, le temps 
+                de traitement long, et aucune visibilité en temps réel sur les 
+                ventes ou les niveaux de stock n'était possible.
+
+                Face à cette réalité, deux questions s'imposaient : comment 
+                aider ces commerçants à piloter leur activité sans les noyer 
+                dans la complexité ? Et comment concevoir des outils qui 
+                fonctionnent même sans connexion internet stable ?
+
+                L'objectif était de concevoir des solutions simples, abordables 
+                et adaptées au contexte localsans nécessiter de connexion 
+                internet permanente ni de formation technique poussée.
+              </p>
+              <p>
+                L'objectif était de concevoir une solution simple, abordable et adaptée
+                au contexte local sans nécessiter de connexion internet permanente ni
+                de formation technique poussée pour les utilisateurs.
+              </p>
+            </div>
+
+            <div class="reveal">
+              <h2>Problématique</h2>
+              <p>
+                Comment digitaliser le cycle de vente complet d'un petit commerce local
+                (stock → vente → facture → suivi) avec un budget zéro, des outils accessibles
+                et une prise en main immédiate par des non-techniciens ?
+              </p>
+            </div>
+
+            <div class="reveal">
+              <h2>Solution développée</h2>
+              <p>La Suite ERP Alpha est composée de deux modules complémentaires :</p>
+
+              <ul>
+                <li>
+                  <strong>Alpha ERP (Python)</strong> — Logiciel standalone (.exe) fonctionnant 
+                  entièrement en local sous Windows, sans connexion internet. 
+                  Base de données SQLite embarquée, interface graphique complète, 
+                  gestion des stocks, crédits, factures PDF (A4, A5, ticket 80mm), 
+                  clôture de caisse journalière et activation par clé MAC unique.
+                </li>
+                <li>
+                  <strong>ERP Google Sheets</strong> — Système de facturation automatisée
+                  piloté par Google Apps Script. Génère les factures en un clic, calcule les totaux,
+                  applique les remises et alimente un dashboard de suivi des ventes et des crédits
+                  clients en temps réel.
+                </li>
+              </ul>
+            </div>
+
+            <div class="reveal">
+              <h2>Résultats</h2>
+              <ul>
+                <li>2 commerces locaux entièrement digitalisés sur le cycle vente/stock/facturation</li>
+                <li>Réduction significative du temps de traitement manuel des stocks et factures</li>
+                <li>Visibilité en temps réel sur les ventes, stocks et crédits clients grâce aux dashboards automatisés</li>
+                <li>Zéro coût d'infrastructure pour les clients (Drive gratuit, .exe local)</li>
+                <li>Prise en main en moins d'une journée par les utilisateurs non-techniciens</li>
+                <li>Deux produits livrés, documentés et opérationnels</li>
+              </ul>
+            </div>
+
+            <div class="reveal">
+              <h2>Ce que j'ai appris</h2>
+              <p>
+                Ce projet m'a permis de confronter mes compétences techniques à de vraies
+                contraintes terrain : utilisateurs peu technophiles, connexion internet instable,
+                budget nul. J'ai appris à prioriser la simplicité d'usage sur la sophistication
+                technique, et à documenter chaque fonctionnalité pour une maintenance autonome
+                par les clients.
+              </p>
+            </div>
+
+          </div>
+
+          <!-- Sidebar résumé -->
+          <aside style="position: sticky; top: 100px;">
+
+            <!-- Métriques clés -->
+            <div style="background:var(--clr-dark); border-radius:var(--radius-lg); padding:var(--space-md); margin-bottom:var(--space-md);" class="reveal">
+              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;">
+                Métriques clés
+              </p>
+              <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-sm);">
+                <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">2</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Commerces</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">2</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Modules</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">0€</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Coût infra</div>
+                </div>
+                <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">&#60;1j</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Prise en main</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Stack technique -->
+            <div style="background:var(--clr-light); border-radius:var(--radius-lg); padding:var(--space-md);" class="reveal reveal-delay-1">
+              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;">
+                Stack technique
+              </p>
+              <div style="display:flex; flex-direction:column; gap:8px;">
+                <div class="skill-item">Python 3 + Tkinter (UI)</div>
+                <div class="skill-item">Google Apps Script</div>
+                <div class="skill-item">Google Sheets API</div>
+                <div class="skill-item">Google Drive (backup)</div>
+                <div class="skill-item">PyInstaller (.exe)</div>
+              </div>
+            </div>
+
+            <!-- Bouton télécharger PDF -->
+            <div style="margin-top: var(--space-md);" class="reveal reveal-delay-2">
+              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;">
+                Documentation
+              </p>
+              <a href="assets/cv/Cipher_Solutions_ERP.pdf" 
+                class="btn btn--primary" 
+                style="width:100%; justify-content:center; font-size:0.8rem;"
+                download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                Télécharger la brochure
+              </a>
+            </div>
+            
+          </aside>
+
+        </div>
+
+        <!-- Galerie / Visuels -->
+        <div class="reveal" style="margin-top: var(--space-2xl);">
+          <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); font-weight:700; margin-bottom:var(--space-md); letter-spacing:-0.02em;">
+            Aperçu du projet
+          </h2>
+          <div class="project-gallery">
+
+          <div class="gallery-item">
+            <img src="assets/images/alpha-vente.png" 
+                alt="Interface Nouvelle Vente — Alpha ERP" 
+                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
+              Alpha ERP — Module Nouvelle Vente
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/images/alpha-stock.png" 
+                alt="Gestion des stocks — Alpha ERP" 
+                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
+              Alpha ERP — Gestion des stocks
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/images/sheet-vente.png" 
+                alt="Menu principal — ERP Google Sheets" 
+                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
+              ERP Google Sheets — Menu principal
+            </p>
+          </div>
+
+          <div class="gallery-item">
+            <img src="assets/images/sheet-rapport.png" 
+                alt="Rapports & Statistiques — ERP Google Sheets" 
+                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
+              ERP Google Sheets — Rapports & Statistiques
+            </p>
+          </div>
+          </div>
+      </div>
+    </section>
+
+
+    <!-- ===== NAVIGATION PROJETS ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
+          <a href="projects.html" class="btn btn--outline">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            <span data-i18n="projects_btn_all"></span>
+          </a>
+          <a href="project-tiger.html" class="btn btn--dark">
+            <span data-i18n="proj_tiger_title"></span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo"><a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a>
+      <p class="footer__copy" data-i18n="footer_copy"></p>
+      <nav class="footer__links" aria-label="Liens réseaux sociaux">
+        <a href="https://www.linkedin.com/in/nabil-dickeni" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:dickenitchagnaou@gmail.com" class="footer__link">Email</a>
+        <a href="https://github.com/Biloumbil" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav_contact"></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script></body>
+</html>

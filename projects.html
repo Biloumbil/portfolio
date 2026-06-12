@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Projets de Nabil Dickeni — ERP Alpha, The Young Tiger, E-commerce, Data Management." />
+  <title>Projets — Nabil Dickeni</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+      <a href="index.html" class="navbar__logo">Nabil <span style="color:var(--clr-accent)">Dickeni</span>
+
+      <nav class="navbar__nav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html"    class="navbar__link" data-i18n="nav_home"></a>
+        <a href="about.html"    class="navbar__link" data-i18n="nav_about"></a>
+        <a href="projects.html" class="navbar__link" data-i18n="nav_projects"></a>
+        <a href="contact.html"  class="navbar__link" data-i18n="nav_contact"></a>
+        <div class="lang-switch" role="group" aria-label="Choix de langue">
+          <button class="lang-btn" data-lang="fr">FR</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </nav>
+
+      <div class="lang-switch" role="group" aria-label="Choix de langue">
+        <button class="lang-btn" data-lang="fr">FR</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <button class="navbar__burger" aria-label="Menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+
+  <main>
+
+    <!-- ===== HERO PROJETS ===== -->
+    <section class="projects-hero" aria-labelledby="projects-title">
+      <div class="container">
+        <p class="section-label reveal" data-i18n="projects_label"></p>
+        <h1 id="projects-title" class="display-lg reveal reveal-delay-1" data-i18n="projects_title"></h1>
+        <p class="reveal reveal-delay-2" style="font-size:1.1rem; color:var(--clr-muted); max-width:540px; margin-top:1rem; font-weight:300;" data-i18n="projects_desc"></p>
+      </div>
+    </section>
+
+
+    <!-- ===== GRILLE PROJETS ===== -->
+    <section class="section" style="padding-top: 0;" aria-label="Liste des projets">
+      <div class="container">
+        <div class="projects-grid">
+
+          <!-- ===== ERP ALPHA — Featured ===== -->
+          <article class="project-card project-card--featured reveal">
+            <div class="project-card__thumb" style="background:#0a1628;">
+              <img src="assets/images/alpha-erp.png" 
+                  alt="Alpha ERP" 
+                  style="width:60%; height:100%; object-fit:contain; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_erp_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_erp_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_erp_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">Python</span>
+                  <span class="tag">Google Sheets</span>
+                  <span class="tag">Automation</span>
+                  <span class="tag">ERP</span>
+                </div>
+                <a href="project-erp.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== THE YOUNG TIGER ===== -->
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card__thumb" aria-hidden="true"
+                 style="background: linear-gradient(135deg, #1a2e4a 0%, #0f1b2d 100%);">
+              <img src="assets/images/young-tiger.png" 
+                alt="The Young Tiger" 
+                style="width:65%; height:100%; object-fit:contain; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_tiger_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_tiger_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_tiger_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">Branding</span>
+                  <span class="tag">SEO Local</span>
+                  <span class="tag">Figma</span>
+                  <span class="tag">IT</span>
+                </div>
+                <a href="project-tiger.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== DATA CLEANING ===== -->
+          <article class="project-card reveal reveal-delay-3">
+            <div class="project-card__thumb" 
+                style="background: linear-gradient(135deg, #0f2a1e 0%, #0f1b2d 100%); font-size:3rem;">
+              <span style="position:relative;z-index:1;"></span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_data_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_data_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_data_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">Google Forms</span>
+                  <span class="tag">Google Sheets</span>
+                  <span class="tag">Data Cleaning</span>
+                  <span class="tag">Automatisation</span>
+                </div>
+                <a href="project-data-cleaning.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== AMERICAN GADGETS ===== -->
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card__thumb" 
+                style="background: linear-gradient(135deg, #1e3a5f 0%, #0f1b2d 100%); font-size:3rem;">
+              <span style="position:relative;z-index:1;"></span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_ecom_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_ecom_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_ecom_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">E-commerce</span>
+                  <span class="tag">Netlify</span>
+                  <span class="tag">UI/UX</span>
+                </div>
+                <a href="project-ecom.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== OTAKU SAMA ===== -->
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card__thumb" 
+                style="background: linear-gradient(135deg, #1e3a5f 0%, #0f1b2d 100%); font-size:3rem;">
+              <span style="position:relative;z-index:1;"></span>
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_otaku_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_otaku_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_otaku_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">Wix</span>
+                  <span class="tag">UI/UX</span>
+                  <span class="tag">Product Design</span>
+                  <span class="tag">Streaming</span>
+                </div>
+                <a href="project-otaku.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CTA ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2 class="section-title" data-i18n="cta_title"></h2>
+          <p data-i18n="cta_desc"></p>
+          <a href="contact.html" class="btn btn--white" data-i18n="cta_btn"></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo"><a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a>
+      <p class="footer__copy" data-i18n="footer_copy"></p>
+      <nav class="footer__links" aria-label="Liens réseaux sociaux">
+        <a href="https://www.linkedin.com/in/nabil-dickeni" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:dickenitchagnaou@gmail.com" class="footer__link">Email</a>
+        <a href="https://github.com/Biloumbil" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav_contact"></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script></body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nabil Dickeni — Digital Operations & Growth Specialist. Automatisation, stratégie digitale et web design à Lomé, Togo." />
+  <title>Nabil Dickeni — Digital Ops & Growth</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" role="banner">
+    <div class="container navbar__inner">
+
+      <a href="index.html" class="navbar__logo">
+        Nabil <span style="color:var(--clr-accent)">Dickeni</span>
+      </a>
+
+      <nav class="navbar__nav" role="navigation" aria-label="Navigation principale">
+        <a href="index.html"    class="navbar__link" data-i18n="nav_home"></a>
+        <a href="about.html"    class="navbar__link" data-i18n="nav_about"></a>
+        <a href="projects.html" class="navbar__link" data-i18n="nav_projects"></a>
+        <a href="contact.html"  class="navbar__link" data-i18n="nav_contact"></a>
+
+        <!-- Switch langue (visible dans le menu mobile aussi) -->
+        <div class="lang-switch" role="group" aria-label="Choix de langue">
+          <button class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+      </nav>
+
+      <!-- Switch langue desktop -->
+      <div class="lang-switch" role="group" aria-label="Choix de langue">
+        <button class="lang-btn" data-lang="fr" aria-label="Français">FR</button>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
+
+      <!-- Burger mobile -->
+      <button class="navbar__burger" aria-label="Menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+
+  <!-- ===== HERO ===== -->
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__inner">
+
+          <!-- Texte gauche -->
+          <div class="hero__content">
+            <p class="hero__eyebrow reveal" data-i18n="hero_eyebrow"></p>
+
+            <h1 id="hero-title" class="display-xl hero__title reveal reveal-delay-1">
+              <span class="line" data-i18n="hero_title_1"></span>
+              <span class="line" data-i18n="hero_title_2"></span>
+              <span class="line line--accent" data-i18n="hero_title_3"></span>
+            </h1>
+
+            <p class="hero__desc reveal reveal-delay-2" data-i18n="hero_desc"></p>
+
+            <div class="hero__actions reveal reveal-delay-3">
+              <a href="projects.html" class="btn btn--primary">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+                <span data-i18n="hero_btn_projects"></span>
+              </a>
+              <a href="assets/cv/CV_Nabil_Dickeni.pdf" class="btn btn--outline" download>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                  <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/>
+                </svg>
+                <span data-i18n="hero_btn_cv"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Carte flottante droite -->
+          <aside class="hero__card reveal reveal-delay-2" aria-label="Carte de profil">
+            <p class="hero__card-label" data-i18n="hero_card_label"></p>
+            <h2 class="hero__card-name">Nabil Dickeni</h2>
+            <p class="hero__card-role" data-i18n="hero_card_role"></p>
+
+            <div class="hero__card-stats">
+              <div class="hero__stat">
+                <div class="hero__stat-num" data-i18n="hero_stat_1_num"></div>
+                <div class="hero__stat-label" data-i18n="hero_stat_1_label"></div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-num" data-i18n="hero_stat_2_num"></div>
+                <div class="hero__stat-label" data-i18n="hero_stat_2_label"></div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-num" data-i18n="hero_stat_3_num"></div>
+                <div class="hero__stat-label" data-i18n="hero_stat_3_label"></div>
+              </div>
+              <div class="hero__stat">
+                <div class="hero__stat-num" data-i18n="hero_stat_4_num"></div>
+                <div class="hero__stat-label" data-i18n="hero_stat_4_label"></div>
+              </div>
+            </div>
+
+            <div class="hero__card-tools">
+              <span class="hero__tool">Python</span>
+              <span class="hero__tool">n8n</span>
+              <span class="hero__tool">SQL</span>
+              <span class="hero__tool">Figma</span>
+              <span class="hero__tool">SEO</span>
+              <span class="hero__tool">Apps Script</span>
+              <span class="hero__tool">WordPress</span>
+            </div>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== SCROLL OUTILS ===== -->
+    <div class="tools-scroll" aria-hidden="true">
+      <div class="tools-track">
+  
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="24" height="24" alt="Python" />Python</span>
+ 
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" width="24" height="24" alt="Figma" />Figma</span>
+
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" width="24" height="24" alt="Canva" />Canva</span>
+
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24" height="24" alt="JavaScript" />JavaScript</span>
+
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24" height="24" alt="HTML/CSS" />HTML / CSS</span>
+ 
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" width="24" height="24" alt="SQL" />SQL</span>
+  
+  <span class="tool-item">
+    <img src="https://www.gstatic.com/images/branding/product/1x/sheets_2020q4_48dp.png" width="24" height="24" alt="Google Sheets" />Google Sheets</span>
+
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" width="24" height="24" alt="WordPress" style="filter: invert(1);" />WordPress</span>
+
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/netlify/netlify-original.svg" width="24" height="24" alt="Netlify" />Netlify</span>
+ 
+  <span class="tool-item">
+    <span style="font-size:1.1rem;font-weight:700;color:#e8823a;">n8n</span>n8n</span>
+ 
+  <span class="tool-item">
+    <img src="https://www.gstatic.com/images/branding/product/1x/apps_script_48dp.png" width="24" height="24" alt="Apps Script" />Apps Script</span>
+
+  <span class="tool-item"><span style="font-size:1rem;font-weight:800;color:#fff;">Wix</span>Wix</span>
+
+  <span class="tool-item"><span style="font-size:1.1rem;">🎬</span>CapCut</span>
+
+  <span class="tool-item"><span style="font-size:1.1rem;">🔍</span>SEO</span>
+  
+  <span class="tool-item">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg" width="24" height="24" alt="OpenAI" style="filter: invert(1);" />OpenAI</span>
+      </div>
+    </div>
+
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+
+        <p class="section-label reveal" data-i18n="services_label"></p>
+        <h2 id="services-title" class="section-title reveal reveal-delay-1" data-i18n="services_title"></h2>
+
+        <div class="grid-3" style="margin-top: 2.5rem;">
+
+          <article class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon" aria-hidden="true">⚙️</div>
+            <h3 class="service-card__title" data-i18n="service_1_title"></h3>
+            <p class="service-card__desc" data-i18n="service_1_desc"></p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon" aria-hidden="true">📈</div>
+            <h3 class="service-card__title" data-i18n="service_2_title"></h3>
+            <p class="service-card__desc" data-i18n="service_2_desc"></p>
+          </article>
+
+          <article class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon" aria-hidden="true">🎨</div>
+            <h3 class="service-card__title" data-i18n="service_3_title"></h3>
+            <p class="service-card__desc" data-i18n="service_3_desc"></p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== PROJETS APERÇU ===== -->
+    <section class="section section--alt" aria-labelledby="projects-preview-title">
+      <div class="container">
+
+        <div class="flex-between" style="margin-bottom: 2.5rem; flex-wrap: wrap; gap: 1rem;">
+          <div>
+            <p class="section-label reveal" data-i18n="projects_label"></p>
+            <h2 id="projects-preview-title" class="section-title reveal reveal-delay-1" style="margin-bottom:0" data-i18n="projects_title"></h2>
+          </div>
+          <a href="projects.html" class="btn btn--outline reveal reveal-delay-2" data-i18n="projects_btn_all"></a>
+        </div>
+
+        <div class="projects-grid">
+
+    <!-- ERP Alpha — Featured -->
+      <article class="project-card project-card--featured reveal">
+        <div class="project-card__thumb" style="background:#0a1628;">
+          <img src="assets/images/alpha-erp.png" 
+              alt="Alpha ERP" 
+              style="width:60%; height:100%; object-fit:contain; position:relative; z-index:1;" />
+        </div>
+        <div class="project-card__body">
+          <p class="project-card__cat" data-i18n="proj_erp_cat"></p>
+          <h2 class="project-card__title" data-i18n="proj_erp_title"></h2>
+          <p class="project-card__desc" data-i18n="proj_erp_desc"></p>
+          <div class="project-card__footer">
+            <div class="tags-list">
+              <span class="tag">Python</span>
+              <span class="tag">Google Sheets</span>
+              <span class="tag">Automation</span>
+            </div>
+            <a href="project-erp.html" class="btn btn--primary" 
+              style="padding:10px 20px;font-size:0.8rem;" 
+              data-i18n="project_view"></a>
+          </div>
+        </div>
+      </article>
+
+
+    <!-- The Young Tiger -->
+      <article class="project-card reveal reveal-delay-1" 
+              style="grid-column: 1 / -1; display:grid; grid-template-columns:1fr 1fr;">
+        <div class="project-card__thumb" style="background:#0d0d0d; min-height:280px;">
+          <img src="assets/images/young-tiger.png" 
+              alt="The Young Tiger" 
+              style="width:70%; height:100%; object-fit:contain; position:relative; z-index:1;" />
+        </div>
+        <div class="project-card__body" style="padding:var(--space-xl); display:flex; flex-direction:column; justify-content:center;">
+          <p class="project-card__cat" data-i18n="proj_tiger_cat"></p>
+          <h2 class="project-card__title" data-i18n="proj_tiger_title"></h2>
+          <p class="project-card__desc" data-i18n="proj_tiger_desc"></p>
+          <div class="project-card__footer">
+            <div class="tags-list">
+              <span class="tag">Branding</span>
+              <span class="tag">SEO Local</span>
+              <span class="tag">IT</span>
+            </div>
+            <a href="project-tiger.html" class="btn btn--primary" 
+              style="padding:10px 20px;font-size:0.8rem;" 
+              data-i18n="project_view"></a>
+          </div>
+        </div>
+      </article>
+
+</div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CTA ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2 class="section-title" data-i18n="cta_title"></h2>
+          <p data-i18n="cta_desc"></p>
+          <a href="contact.html" class="btn btn--white" data-i18n="cta_btn"></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <a href="index.html" class="footer__logo"><a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a> 
+      <p class="footer__copy" data-i18n="footer_copy"></p>
+      <nav class="footer__links" aria-label="Liens réseaux sociaux">
+        <a href="https://www.linkedin.com/in/nabil-dickeni" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:dickenitchagnaou@gmail.com" class="footer__link">Email</a>
+        <a href="https://github.com/Biloumbil" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="contact.html" class="footer__link" data-i18n="nav_contact"></a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="js/main.js"></script>
+  <script src="js/lightbox.js"></script>
+
+</body>
+</html>
