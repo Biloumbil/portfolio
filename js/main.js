@@ -143,7 +143,7 @@ const navbar = (() => {
 
 
 /* ============================================
-   3. REVEAL — animation au scroll (IntersectionObserver)
+   3. REVEAL — animation au scroll 
    ============================================ */
 const reveal = (() => {
   function init() {
@@ -170,7 +170,7 @@ const reveal = (() => {
 
 
 /* ============================================
-   4. TOOLS SCROLL — duplique la piste pour boucle infinie
+   4. TOOLS SCROLL 
    ============================================ */
 const toolsScroll = (() => {
   function init() {
@@ -189,7 +189,7 @@ const toolsScroll = (() => {
 
 
 /* ============================================
-   5. FORMULAIRE CONTACT — validation légère
+   5. FORMULAIRE CONTACT 
    ============================================ */
 const contactForm = (() => {
   function init() {
@@ -288,8 +288,7 @@ function initSmoothScroll() {
 
 
 /* ============================================
-   7. CURSOR ACCENT — point orange qui suit la souris
-      (désactivé sur mobile)
+   7. CURSOR ACCENT 
    ============================================ */
 const cursor = (() => {
   function init() {
@@ -342,7 +341,7 @@ const cursor = (() => {
 
 
 /* ============================================
-   8. BOOT — initialisation globale
+   8. BOOT 
    ============================================ */
 document.addEventListener('DOMContentLoaded', async () => {
   await i18n.init();   /* Traductions en premier */
