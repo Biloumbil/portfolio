@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Projets de Nabil Dickeni — ERP Alpha, The Young Tiger, E-commerce, Data Management." />
+  <meta name="description" content="Projets de Nabil Dickeni : The Young Tiger, Alpha ERP, ASSAFETO et autres applications livrées à de vrais clients." />
   <title>Projets — Nabil Dickeni</title>
 
   <!-- Fonts & Favicon -->
@@ -33,7 +33,7 @@
   <!-- ===== NAVBAR ===== -->
   <header class="navbar" role="banner">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__logo">Nabil <span style="color:var(--clr-accent)">Dickeni</span>
+      <a href="index.html" class="navbar__logo">Nabil <span style="color:var(--clr-accent)">Dickeni</span></a>
 
       <nav class="navbar__nav" role="navigation" aria-label="Navigation principale">
         <a href="index.html"    class="navbar__link" data-i18n="nav_home"></a>
@@ -75,8 +75,55 @@
       <div class="container">
         <div class="projects-grid">
 
-          <!-- ===== ERP ALPHA — Featured ===== -->
+          
+
+          <!-- ===== THE YOUNG TIGER ===== -->
           <article class="project-card project-card--featured reveal">
+            <div class="project-card__thumb" style="background:#0d0d0d;">
+              <img src="assets/images/young-tiger.png" 
+                alt="The Young Tiger" 
+                style="width:60%; height:100%; object-fit:contain; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_tiger_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_tiger_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_tiger_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">React</span>
+                  <span class="tag">PocketBase</span>
+                  <span class="tag">Tauri</span>
+                  <span class="tag">VPS</span>
+                </div>
+                <a href="project-tiger.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+          <!-- ===== THE YOUNG TIGER VISIBILITE ===== -->
+          <article class="project-card project-card--featured reveal reveal-delay-1">
+            <div class="project-card__thumb" style="background:#f7f2ea;">
+              <img src="assets/images/young-tiger-visibilite/site-telephone.jpg" alt="The Young Tiger, site vitrine" style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_ytv_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_ytv_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_ytv_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">Branding</span>
+                  <span class="tag">Réseaux</span>
+                  <span class="tag">Site vitrine</span>
+                  <span class="tag">Motion</span>
+                </div>
+                <a href="project-tiger-visibilite.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+
+          <!-- ===== ERP ALPHA — Featured ===== -->
+          <article class="project-card project-card--featured reveal reveal-delay-1">
             <div class="project-card__thumb" style="background:#0a1628;">
               <img src="assets/images/alpha-erp.png" 
                   alt="Alpha ERP" 
@@ -89,8 +136,8 @@
               <div class="project-card__footer">
                 <div class="tags-list">
                   <span class="tag">Python</span>
-                  <span class="tag">Google Sheets</span>
-                  <span class="tag">Automation</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">PWA</span>
                   <span class="tag">ERP</span>
                 </div>
                 <a href="project-erp.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
@@ -98,35 +145,51 @@
             </div>
           </article>
 
-          <!-- ===== THE YOUNG TIGER ===== -->
-          <article class="project-card reveal reveal-delay-1">
-            <div class="project-card__thumb" aria-hidden="true"
-                 style="background: linear-gradient(135deg, #1a2e4a 0%, #0f1b2d 100%);">
-              <img src="assets/images/young-tiger.png" 
-                alt="The Young Tiger" 
-                style="width:65%; height:100%; object-fit:contain; position:relative; z-index:1;" />
+          <!-- ===== ALPHA QUINCAILLERIE ===== -->
+          <article class="project-card reveal reveal-delay-2">
+            <div class="project-card__thumb" style="background:#16191b;">
+              <img src="assets/images/quincaillerie/quincaillerie-couverture.jpg" alt="Alpha Quincaillerie" style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;" />
             </div>
             <div class="project-card__body">
-              <p class="project-card__cat" data-i18n="proj_tiger_cat"></p>
-              <h2 class="project-card__title" data-i18n="proj_tiger_title"></h2>
-              <p class="project-card__desc" data-i18n="proj_tiger_desc"></p>
+              <p class="project-card__cat" data-i18n="proj_quin_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_quin_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_quin_desc"></p>
               <div class="project-card__footer">
                 <div class="tags-list">
-                  <span class="tag">Branding</span>
-                  <span class="tag">SEO Local</span>
-                  <span class="tag">Figma</span>
-                  <span class="tag">IT</span>
+                  <span class="tag">React</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">PWA</span>
                 </div>
-                <a href="project-tiger.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+                <a href="project-quincaillerie.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
               </div>
             </div>
           </article>
 
+          <!-- ===== ETS AL BARAKAT ===== -->
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card__thumb" style="background:#1E4E35;">
+              <img src="assets/images/al-barakat/accueil.jpg" alt="ETS AL BARAKAT" style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_alb_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_alb_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_alb_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">React</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">Hors ligne</span>
+                </div>
+                <a href="project-albarakat.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+
           <!-- ===== DATA CLEANING ===== -->
           <article class="project-card reveal reveal-delay-3">
-            <div class="project-card__thumb" 
-                style="background: linear-gradient(135deg, #0f2a1e 0%, #0f1b2d 100%); font-size:3rem;">
-              <span style="position:relative;z-index:1;"></span>
+            <div class="project-card__thumb" style="background:#0f2a1e;">
+              <img src="assets/images/data-base-finale.png" alt="ASSAFETO" style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;" />
             </div>
             <div class="project-card__body">
               <p class="project-card__cat" data-i18n="proj_data_cat"></p>
@@ -137,54 +200,8 @@
                   <span class="tag">Google Forms</span>
                   <span class="tag">Google Sheets</span>
                   <span class="tag">Data Cleaning</span>
-                  <span class="tag">Automatisation</span>
                 </div>
                 <a href="project-data-cleaning.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- ===== AMERICAN GADGETS ===== -->
-          <article class="project-card reveal reveal-delay-2">
-            <div class="project-card__thumb" 
-                style="background: linear-gradient(135deg, #1e3a5f 0%, #0f1b2d 100%); font-size:3rem;">
-              <span style="position:relative;z-index:1;"></span>
-            </div>
-            <div class="project-card__body">
-              <p class="project-card__cat" data-i18n="proj_ecom_cat"></p>
-              <h2 class="project-card__title" data-i18n="proj_ecom_title"></h2>
-              <p class="project-card__desc" data-i18n="proj_ecom_desc"></p>
-              <div class="project-card__footer">
-                <div class="tags-list">
-                  <span class="tag">HTML/CSS</span>
-                  <span class="tag">JavaScript</span>
-                  <span class="tag">E-commerce</span>
-                  <span class="tag">Netlify</span>
-                  <span class="tag">UI/UX</span>
-                </div>
-                <a href="project-ecom.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
-              </div>
-            </div>
-          </article>
-
-          <!-- ===== OTAKU SAMA ===== -->
-          <article class="project-card reveal reveal-delay-2">
-            <div class="project-card__thumb" 
-                style="background: linear-gradient(135deg, #1e3a5f 0%, #0f1b2d 100%); font-size:3rem;">
-              <span style="position:relative;z-index:1;"></span>
-            </div>
-            <div class="project-card__body">
-              <p class="project-card__cat" data-i18n="proj_otaku_cat"></p>
-              <h2 class="project-card__title" data-i18n="proj_otaku_title"></h2>
-              <p class="project-card__desc" data-i18n="proj_otaku_desc"></p>
-              <div class="project-card__footer">
-                <div class="tags-list">
-                  <span class="tag">Wix</span>
-                  <span class="tag">UI/UX</span>
-                  <span class="tag">Product Design</span>
-                  <span class="tag">Streaming</span>
-                </div>
-                <a href="project-otaku.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
               </div>
             </div>
           </article>
@@ -193,6 +210,54 @@
       </div>
     </section>
 
+
+
+    <!-- ===== PROJETS PERSONNELS ===== -->
+    <section class="section" style="padding-top:0;" aria-labelledby="perso-title">
+      <div class="container">
+        <p class="section-label reveal" data-i18n="perso_label"></p>
+        <h2 id="perso-title" class="section-title reveal reveal-delay-1" data-i18n="perso_title"></h2>
+        <div class="projects-grid" style="margin-top:2rem;">
+          <article class="project-card reveal">
+            <div class="project-card__thumb" style="background:#15110d;">
+              <img src="assets/images/barber/barber-couverture.jpg" alt="Biloumbil Barber" style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_barber_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_barber_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_barber_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">React</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">PWA</span>
+                </div>
+                <a href="project-barber.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal reveal-delay-1">
+            <div class="project-card__thumb" style="background:#111;">
+              <img src="assets/images/antre/ordinateur.jpg" alt="Antre" style="width:100%; height:100%; object-fit:cover; position:relative; z-index:1;" />
+            </div>
+            <div class="project-card__body">
+              <p class="project-card__cat" data-i18n="proj_antre_cat"></p>
+              <h2 class="project-card__title" data-i18n="proj_antre_title"></h2>
+              <p class="project-card__desc" data-i18n="proj_antre_desc"></p>
+              <div class="project-card__footer">
+                <div class="tags-list">
+                  <span class="tag">Next.js</span>
+                  <span class="tag">Supabase</span>
+                  <span class="tag">Cloudinary</span>
+                </div>
+                <a href="project-antre.html" class="btn btn--primary" style="padding:10px 20px;font-size:0.8rem;" data-i18n="project_view"></a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- ===== CTA ===== -->
     <section class="section section--alt">
@@ -211,11 +276,12 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
-      <a href="index.html" class="footer__logo"><a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a>
+      <a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a>
       <p class="footer__copy" data-i18n="footer_copy"></p>
       <nav class="footer__links" aria-label="Liens réseaux sociaux">
         <a href="https://www.linkedin.com/in/nabil-dickeni" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:dickenitchagnaou@gmail.com" class="footer__link">Email</a>
+        <a href="https://wa.me/22897113438" class="footer__link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="https://github.com/Biloumbil" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="contact.html" class="footer__link" data-i18n="nav_contact"></a>
       </nav>
@@ -223,6 +289,7 @@
   </footer>
 
   <!-- JS -->
+  <script src="js/lang/translations.js"></script>
   <script src="js/main.js"></script>
   <script src="js/lightbox.js"></script></body>
 </html>

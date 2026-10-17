@@ -1597,3 +1597,21 @@ h1, h2, h3, h4, h5 {
   .btn { width: 100%; justify-content: center; }
   .project-gallery { grid-template-columns: 1fr; }
 }
+
+/* Grilles en ligne : une seule colonne sur mobile */
+@media (max-width: 900px) {
+  .layout-split { grid-template-columns: 1fr !important; gap: var(--space-lg) !important; }
+  .layout-split > aside { position: static !important; }
+  .about-hero { padding-bottom: calc(var(--space-2xl) + 40px); }
+  .about-hero::before { height: 50px; }
+}
+
+/* Barre de navigation lisible sur les en-têtes sombres (À propos, fiches projets) */
+.navbar--on-dark:not(.scrolled) .navbar__logo,
+.navbar--on-dark:not(.scrolled) .navbar__link { color: #fff; }
+.navbar--on-dark:not(.scrolled) .navbar__burger span { background: #fff; }
+.navbar--on-dark:not(.scrolled) .navbar__nav.open .navbar__link { color: var(--clr-dark); }
+.navbar--on-dark:not(.scrolled):has(.navbar__nav.open) .navbar__logo { color: var(--clr-dark); }
+.navbar--on-dark:not(.scrolled):has(.navbar__nav.open) .navbar__burger span { background: var(--clr-dark); }
+/* Le bouton menu reste visible au-dessus du menu ouvert, pour pouvoir le fermer */
+.navbar__burger { position: relative; z-index: 1001; }

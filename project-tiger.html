@@ -31,9 +31,9 @@
 <body>
 
   <!-- ===== NAVBAR ===== -->
-  <header class="navbar" role="banner">
+  <header class="navbar navbar--on-dark" role="banner">
     <div class="container navbar__inner">
-      <a href="index.html" class="navbar__logo">Nabil <span style="color:var(--clr-accent)">Dickeni</span>
+      <a href="index.html" class="navbar__logo">Nabil <span style="color:var(--clr-accent)">Dickeni</span></a>
 
       <nav class="navbar__nav" role="navigation" aria-label="Navigation principale">
         <a href="index.html"    class="navbar__link" data-i18n="nav_home"></a>
@@ -84,39 +84,42 @@
                data-i18n="proj_tiger_desc"></p>
 
             <div class="tags-list reveal reveal-delay-3" style="margin-top:1.5rem;">
-              <span class="tag tag--accent">Branding</span>
-              <span class="tag tag--accent">SEO Local</span>
-              <span class="tag tag--accent">Figma</span>
-              <span class="tag tag--accent">IT</span>
-              <span class="tag tag--accent">ERP Sheets</span>
+              <span class="tag tag--accent">React</span>
+              <span class="tag tag--accent">TypeScript</span>
+              <span class="tag tag--accent">Tauri</span>
+              <span class="tag tag--accent">PocketBase</span>
+              <span class="tag tag--accent">VPS</span>
+            </div>
+            <div class="reveal reveal-delay-3" style="margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+              <a href="project-tiger-visibilite.html" class="btn btn--outline" style="padding:10px 20px;font-size:0.8rem;color:#fff;border-color:rgba(255,255,255,0.3);" data-i18n="see_also_ytv"></a>
             </div>
           </div>
 
           <!-- Sidebar méta -->
           <aside class="project-meta__sidebar reveal reveal-delay-2" aria-label="Détails du projet">
             <div class="project-meta__row">
-              <p class="project-meta__key">Année</p>
-              <p class="project-meta__val">2026</p>
+              <p class="project-meta__key" data-i18n="pm_year"></p>
+              <p class="project-meta__val" data-i18n="tiger_m_year"></p>
             </div>
             <div class="project-meta__row">
-              <p class="project-meta__key">Rôle</p>
-              <p class="project-meta__val">Consultant Digital & Operations</p>
+              <p class="project-meta__key" data-i18n="pm_role"></p>
+              <p class="project-meta__val" data-i18n="tiger_m_role"></p>
             </div>
             <div class="project-meta__row">
-              <p class="project-meta__key">Type</p>
-              <p class="project-meta__val">Mission freelance</p>
+              <p class="project-meta__key" data-i18n="pm_type"></p>
+              <p class="project-meta__val" data-i18n="tiger_m_type"></p>
             </div>
             <div class="project-meta__row">
-              <p class="project-meta__key">Client</p>
-              <p class="project-meta__val">The Young Tiger, Lomé</p>
+              <p class="project-meta__key" data-i18n="pm_client"></p>
+              <p class="project-meta__val" data-i18n="tiger_m_client"></p>
             </div>
             <div class="project-meta__row">
-              <p class="project-meta__key">Outils</p>
-              <p class="project-meta__val">Figma, Canva, Google Sheets, Apps Script, Google Maps</p>
+              <p class="project-meta__key" data-i18n="pm_tools"></p>
+              <p class="project-meta__val" data-i18n="tiger_m_tools"></p>
             </div>
             <div class="project-meta__row">
-              <p class="project-meta__key">Impact</p>
-              <p class="project-meta__val">Digitalisation 360°</p>
+              <p class="project-meta__key" data-i18n="pm_status"></p>
+              <p class="project-meta__val" data-i18n="tiger_m_status"></p>
             </div>
           </aside>
 
@@ -128,80 +131,34 @@
     <!-- ===== CONTENU PROJET ===== -->
     <section class="project-content">
       <div class="container">
-        <div style="display:grid; grid-template-columns: 1fr 340px; gap: var(--space-2xl); align-items: start;">
+        <div class="layout-split" style="display:grid; grid-template-columns: 1fr 340px; gap: var(--space-2xl); align-items: start;">
 
           <!-- Corps principal -->
           <div>
 
             <div class="reveal">
-              <h2>Contexte</h2>
-              <p>
-                The Young Tiger est un commerce local à Lomé qui démarrait 
-                son activité sans outil de gestion, sans présence en ligne 
-                et sans identité visuelle définie. L'objectif était de 
-                structurer et digitaliser l'ensemble de leur activité 
-                commerciale de A à Z.
-              </p>
+              <h2 data-i18n="pm_context"></h2>
+              <div data-i18n-html="tiger_s_context"></div>
             </div>
 
             <div class="reveal">
-              <h2>Problématique</h2>
-              <p>
-                Comment accompagner un commerce local dans sa transformation 
-                digitale complète — identité visuelle, outils de gestion, 
-                visibilité en ligne et infrastructure informatique — en 
-                partant de zéro ?
-              </p>
+              <h2 data-i18n="pm_problem"></h2>
+              <div data-i18n-html="tiger_s_problem"></div>
             </div>
 
             <div class="reveal">
-              <h2>Solution développée</h2>
-              <p>Une mission de consulting 360° couvrant 4 axes :</p>
-
-              <ul>
-                <li>
-                  <strong>Identité visuelle</strong> — Conception du logo, des affiches 
-                          de communication et des bannières extérieures sous Figma 
-                          et Canva.
-                </li>
-                <li>
-                  <strong>Gestion commerciale</strong> — Installation et configuration de 
-                          l'ERP Google Sheets (ventes, stocks, crédits, factures PDF) 
-                          avec formation des utilisateurs.
-                </li>
-                <li>
-                  <strong>SEO Local</strong> — Optimisation de la fiche Google Maps 
-                          (Google Business Profile) pour booster la visibilité 
-                          locale du commerce dans les recherches.
-                </li>
-                <li>
-                  <strong>Infrastructure informatique</strong> — Installation et configuration 
-                          du parc informatique (PC, imprimantes, périphériques, 
-                          Windows).
-                </li>
-              </ul>
+              <h2 data-i18n="pm_solution"></h2>
+              <div data-i18n-html="tiger_s_solution"></div>
             </div>
 
             <div class="reveal">
-              <h2>Résultats</h2>
-              <ul>
-                <li>Identité visuelle complète livrée — logo, affiches, bannières</li>
-                <li>ERP Google Sheets opérationnel — ventes et stocks gérés numériquement dès le premier jour </li>
-                <li>Présence Google Maps optimisée pour la visibilité locale</li>
-                <li>Parc informatique installé et fonctionnel</li>
-                <li>Commerce digitalisé de A à Z en une seule mission</li>
-              </ul>
+              <h2 data-i18n="pm_results"></h2>
+              <div data-i18n-html="tiger_s_results"></div>
             </div>
 
             <div class="reveal">
-              <h2>Ce que j'ai appris</h2>
-              <p>
-                Cette mission m'a appris à gérer un projet multi-domaines 
-                en autonomie — design, technique, ops et formation — 
-                en m'adaptant aux contraintes et au rythme d'un vrai client. 
-                C'est le projet qui illustre le mieux mon profil Digital 
-                Ops & Growth.
-              </p>
+              <h2 data-i18n="pm_learned"></h2>
+              <div data-i18n-html="tiger_s_learned"></div>
             </div>
 
           </div>
@@ -211,40 +168,36 @@
 
             <!-- Métriques clés -->
             <div style="background:var(--clr-dark); border-radius:var(--radius-lg); padding:var(--space-md); margin-bottom:var(--space-md);" class="reveal">
-              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;">
-                Métriques clés
-              </p>
+              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;" data-i18n="pm_metrics"></p>
               <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-sm);">
                 <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
-                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">4</div>
-                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Axes livrés</div>
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">3</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;" data-i18n="tiger_k1"></div>
                 </div>
                 <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
                   <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">1</div>
-                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Client</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;" data-i18n="tiger_k2"></div>
                 </div>
                 <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
-                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">360°</div>
-                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Digitalisation</div>
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">10</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;" data-i18n="tiger_k3"></div>
                 </div>
                 <div style="background:rgba(255,255,255,0.05); border-radius:var(--radius-md); padding:var(--space-sm); text-align:center;">
-                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">2026</div>
-                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;">Année</div>
+                  <div style="font-family:var(--font-display); font-size:var(--text-3xl); font-weight:800; color:var(--clr-accent);">200+</div>
+                  <div style="font-size:var(--text-xs); color:rgba(255,255,255,0.5); margin-top:2px;" data-i18n="tiger_k4"></div>
                 </div>
               </div>
             </div>
 
             <!-- Stack technique -->
             <div style="background:var(--clr-light); border-radius:var(--radius-lg); padding:var(--space-md);" class="reveal reveal-delay-1">
-              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;">
-                Stack technique
-              </p>
+              <p style="font-size:var(--text-xs); letter-spacing:0.1em; text-transform:uppercase; color:var(--clr-accent); margin-bottom:var(--space-sm); font-weight:500;" data-i18n="pm_stack"></p>
               <div style="display:flex; flex-direction:column; gap:8px;">
-                <div class="skill-item">Figma</div>
-                <div class="skill-item">Canva</div>
-                <div class="skill-item">Google Sheets + Apps Script</div>
-                <div class="skill-item">Google Business Profile</div>
-                <div class="skill-item">Windows / IT Support</div>
+                <div class="skill-item">React + TypeScript</div>
+                <div class="skill-item">Tauri (appli bureau)</div>
+                <div class="skill-item">PocketBase</div>
+                <div class="skill-item">VPS Hostinger + domaine</div>
+                <div class="skill-item">Google Sheets (première version)</div>
               </div>
             </div>
 
@@ -254,45 +207,47 @@
 
         <!-- Galerie / Visuels -->
         <div class="reveal" style="margin-top: var(--space-2xl);">
-          <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); font-weight:700; margin-bottom:var(--space-md); letter-spacing:-0.02em;">
-            Aperçu du projet
-          </h2>
+          <h2 style="font-family:var(--font-display); font-size:var(--text-2xl); font-weight:700; margin-bottom:var(--space-md); letter-spacing:-0.02em;" data-i18n="pm_gallery"></h2>
           <div class="project-gallery">
-
           <div class="gallery-item">
-            <img src="assets/images/young-tiger.png" 
-                alt="Identité visuelle — Logo" 
-                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
-            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
-              Identité visuelle — Logo
-            </p>
+            <img src="assets/images/nouveaux/the-young-tiger/vendeur-03-panier.png" alt="Écran vendeur : catalogue et panier" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g1"></p>
           </div>
-
           <div class="gallery-item">
-            <img src="assets/images/affiche1.jpeg" 
-                alt="Affiche — Commerce Général" 
-                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
-            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
-              Affiche — Commerce Général
-            </p>
+            <img src="assets/images/nouveaux/the-young-tiger/panier-remise.png" alt="Vente à crédit : le reste dû se calcule tout seul" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g2"></p>
           </div>
-
           <div class="gallery-item">
-            <img src="assets/images/affiche2.jpeg" 
-                alt="Affiche — Groupe Électrogène Diesel" 
-                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
-            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
-              Affiche — Groupe Électrogène Diesel
-            </p>
+            <img src="assets/images/nouveaux/the-young-tiger/vendeur-06-modale-demande.png" alt="Article en rupture : le vendeur le demande à l'entrepôt" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g3"></p>
           </div>
-
           <div class="gallery-item">
-            <img src="assets/images/Seo_local.png" 
-                alt="SEO Local — Fiche Google Maps (151 interactions)" 
-                style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
-            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;">
-              SEO Local — Fiche Google Maps
-            </p>
+            <img src="assets/images/nouveaux/the-young-tiger/stock-matrice.png" alt="Stock par boutique et entrepôt, avec les alertes" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g4"></p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/nouveaux/the-young-tiger/stock-a-faire-venir.png" alt="Ce qu'il faut faire venir de l'entrepôt" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g5"></p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/nouveaux/the-young-tiger/transferts-liste.png" alt="Transferts entre l'entrepôt et les boutiques" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g6"></p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/nouveaux/the-young-tiger/transferts-reception.png" alt="Réception d'un transfert en boutique" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g7"></p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/nouveaux/the-young-tiger/stock-mobile.png" alt="Le stock sur téléphone" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g8"></p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/nouveaux/the-young-tiger/planche-filigrane-1.png" alt="Factures A5 en double exemplaire, au filigrane du client" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g9"></p>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/nouveaux/the-young-tiger/planche-facture-finale.png" alt="Les documents imprimés : factures, proformas, reçus" loading="lazy" style="width:100%; border-radius:var(--radius-md); border:1px solid var(--clr-border);" />
+            <p style="font-size:var(--text-xs); color:var(--clr-muted); margin-top:8px; text-align:center;" data-i18n="tiger_g10"></p>
           </div>
           </div>
 
@@ -304,18 +259,8 @@
     <section class="section section--alt">
       <div class="container">
         <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem;">
-          <a href="project-erp.html" class="btn btn--outline">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-              <path d="M19 12H5M12 19l-7-7 7-7"/>
-            </svg>
-            <span data-i18n="proj_erp_title"></span>
-          </a>
-          <a href="project-data-cleaning.html" class="btn btn--dark">
-            <span data-i18n="proj_data_title"></span>
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
-            </svg>
-          </a>
+          <a href="projects.html" class="btn btn--outline"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg><span data-i18n="projects_btn_all"></span></a>
+          <a href="project-tiger-visibilite.html" class="btn btn--dark"><span data-i18n="proj_ytv_title"></span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
         </div>
       </div>
     </section>
@@ -326,11 +271,12 @@
   <!-- ===== FOOTER ===== -->
   <footer class="footer" role="contentinfo">
     <div class="container footer__inner">
-      <a href="index.html" class="footer__logo"><a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a> 
+      <a href="index.html" class="footer__logo">Nabil <span>Dickeni</span></a> 
       <p class="footer__copy" data-i18n="footer_copy"></p>
       <nav class="footer__links" aria-label="Liens réseaux sociaux">
         <a href="https://www.linkedin.com/in/nabil-dickeni" class="footer__link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="mailto:dickenitchagnaou@gmail.com" class="footer__link">Email</a>
+        <a href="https://wa.me/22897113438" class="footer__link" target="_blank" rel="noopener noreferrer">WhatsApp</a>
         <a href="https://github.com/Biloumbil" class="footer__link" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="contact.html" class="footer__link" data-i18n="nav_contact"></a>
       </nav>
@@ -338,6 +284,7 @@
   </footer>
 
   <!-- JS -->
+  <script src="js/lang/translations.js"></script>
   <script src="js/main.js"></script>
   <script src="js/lightbox.js"></script></body>
 </html>

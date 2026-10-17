@@ -2,17 +2,24 @@
    1. i18n — SYSTÈME DE TRADUCTION
    ============================================ */
 const i18n = (() => {
-  let currentLang = localStorage.getItem('nd_lang') || 'fr';
+  let currentLang = 'fr';
+  try { currentLang = localStorage.getItem('nd_lang') || 'fr'; } catch (e) {}
   let translations = {};
 
   /* Charge le fichier JSON de la langue */
   async function load(lang) {
     try {
-      const res = await fetch(`/js/lang/${lang}.json`);
-      if (!res.ok) throw new Error(`Impossible de charger ${lang}.json`);
-      translations = await res.json();
+      /* 1. Traductions embarquées (marche aussi en ouvrant le fichier en double clic) */
+      if (window.ND_TRANSLATIONS && window.ND_TRANSLATIONS[lang]) {
+        translations = window.ND_TRANSLATIONS[lang];
+      } else {
+        /* 2. Repli : fichier JSON, chemin relatif */
+        const res = await fetch(`js/lang/${lang}.json`);
+        if (!res.ok) throw new Error(`Impossible de charger ${lang}.json`);
+        translations = await res.json();
+      }
       currentLang = lang;
-      localStorage.setItem('nd_lang', lang);
+      try { localStorage.setItem('nd_lang', lang); } catch (e) {}
       apply();
       updateLangButtons();
     } catch (err) {
@@ -32,6 +39,12 @@ const i18n = (() => {
           el.textContent = translations[key];
         }
       }
+    });
+
+    /* Blocs riches (paragraphes, listes) : contenu HTML de nos propres fichiers JSON */
+    document.querySelectorAll('[data-i18n-html]').forEach(el => {
+      const key = el.dataset.i18nHtml;
+      if (translations[key] !== undefined) el.innerHTML = translations[key];
     });
 
     /* Attribut lang sur <html> pour accessibilité */
